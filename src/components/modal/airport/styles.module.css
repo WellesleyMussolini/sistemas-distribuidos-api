@@ -53,3 +53,10 @@
     background: gray;
     cursor: not-allowed;
 }
+
+.close{
+    position: relative;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
