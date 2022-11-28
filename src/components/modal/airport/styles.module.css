@@ -1,0 +1,55 @@
+.container {
+    height: 30em;
+    width: 25em;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: rgb(104, 104, 104);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+.wrapper form p{
+    text-align: left;
+}
+
+.wrapper form input{
+    margin-bottom: 10px;
+    outline: none;
+    padding: 5px;
+    border: 0.1px solid rgb(156, 156, 156);
+    border-radius: 7px;
+}
+
+.wrapper form button{
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: rgb(34, 114, 34);
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.wrapper form button[disabled]{
+    background: gray;
+    cursor: not-allowed;
+}

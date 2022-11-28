@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import PageSwitcher from "../../components/pagination/Pagination";
-import Modal from "../../components/modal/Modal";
-import { filter_weather } from "../../utils/filter_weather";
+import Modal from "../../components/modal/weather/Modal";
+import { filter_weather } from "../../utils/filter_api";
 
 const Weather = ({ search }) => {
     const [submitModal, setSubmitModal] = useState(false);
@@ -106,6 +106,7 @@ const Weather = ({ search }) => {
                         return (
                             <li key={index}>
                                 <tr>
+                                    <p>ID</p>
                                     <p>NOME</p>
                                     <p>LONGITUDE</p>
                                     <p>ALTITUDE</p>
@@ -114,6 +115,7 @@ const Weather = ({ search }) => {
                                     <p>UF</p>
                                 </tr>
                                 <tr>
+                                    <p>{item.stationId}</p>
                                     <p>{item.stationName}</p>
                                     <p>{item.longitude}</p>
                                     <p>{item.height}</p>
@@ -174,7 +176,6 @@ const Weather = ({ search }) => {
                         HandleCurrentPage={HandlePageSwitch}
                     />
                 }
-                <h1> PÁGINA: {pageSwitch}</h1>
             </ul>
         </div>
     )

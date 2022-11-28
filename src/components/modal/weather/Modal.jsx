@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
+import CloseIcon from '@mui/icons-material/Close';
 
 const Modal = ({
     handleCloseModal,
@@ -29,7 +30,9 @@ const Modal = ({
             {
                 submitForm &&
                 <div className={styles.container}>
-                    <div className={styles.close} onClick={handleCloseModal}>X</div>
+                    <div className={styles.close} onClick={handleCloseModal}>
+                        <CloseIcon />
+                    </div>
                     <div className={styles.wrapper}>
                         <form onSubmit={handleSubmit}>
                             <p>Nome</p>
@@ -79,10 +82,12 @@ const Modal = ({
             }
 
 
-{
+            {
                 editForm &&
                 <div className={styles.container}>
-                    <div className={styles.close} onClick={handleCloseModal}>X</div>
+                    <div className={styles.close} onClick={handleCloseModal}>
+                        <CloseIcon />
+                    </div>
                     <div className={styles.wrapper}>
                         <form onSubmit={handleEdit}>
                             <p>Nome</p>

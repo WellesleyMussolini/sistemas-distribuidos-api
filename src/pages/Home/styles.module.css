@@ -21,7 +21,8 @@
     gap: 200px;
 }
 
-.pageOptions div:first-child{
+.pageOptions div:first-child,
+.pageOptions div:last-child{
     display: flex;
     justify-content: center;
     align-items: center;

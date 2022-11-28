@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.container .button {
+    position: fixed;
+    left: 50px;
+    top: 100px;
+}
+
+.button button {
+    padding: 10px 10px;
+    background: rgb(65, 123, 209);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.button button:hover {
+    background: rgb(7, 104, 250);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.table {
+    max-height: 50em;
+}
+
+.table li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.table li tr {
+    display: flex;
+    flex-direction: row;
+}
+
+.table li tr p {
+    width: 10em;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.table li,
+.table tr {
+    border: 1px solid rgba(0, 0, 0, 0.555);
+}
+
+.table li .delete,
+.table li .edit{
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.table li .delete{
+background: rgb(165, 23, 23);
+}
+
+.table li .edit{
+    background: rgb(201, 148, 14);
+}
+
+.table li .delete:hover{
+    background: rgb(202, 14, 14);
+    transition: 1s;
+}
+
+.table li .edit:hover{
+    background: rgb(231, 168, 9);
+    transition: 1s;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
