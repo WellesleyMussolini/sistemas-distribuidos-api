@@ -3,5 +3,6 @@
 FrontEnd de duas apis desenvolvidas em ReactJS.
 
 <div style="display: flex">
-  BackEnd desenvolvido em java pelo: <p><a href="https://github.com/Almadavic/">Victor Almada</a></p>
+  <p>BackEnd desenvolvido em java</p>
+  <p>Desenvolvedor do BackEnd: <a href="https://github.com/Almadavic/">Victor Almada</a></p>
 </div>
